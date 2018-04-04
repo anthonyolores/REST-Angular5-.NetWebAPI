@@ -1,0 +1,18 @@
+<ul>
+    <li>
+        <input [(ngModel)]="postName" type="text" placeholder="Name">
+        <span class="action-btn-group">
+                <div class="btn-add" (click)="postPerson(postName)">Add New Person</div>
+        </span>
+    </li>
+    <li *ngFor="let person of people; let i = index">           
+            <input type="text" 
+            [(ngModel)]="peopleModel[i]"
+            placeholder="{{person.Name}}">
+            <span class="action-btn-group">
+                <div class="btn-update" (click)="putPerson(i)">Update</div>
+                <div class="btn-delete" (click)="deletePerson(person.Id)">Delete</div>
+        </span>
+    </li>
+</ul>
+

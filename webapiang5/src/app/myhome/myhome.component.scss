@@ -1,0 +1,48 @@
+$font-stack:    Helvetica, sans-serif;
+$update-color: #42a1f4;
+$delete-color:#db2323;
+$add-color:#2fb200;
+$font-size: 16px;
+
+ul{
+    font-family: $font-stack;
+    font-size: $font-size;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+        margin-top: 5px;
+        input{
+            padding:5px;
+            border: 1px solid #ddd;
+        }
+       .action-btn-group div{
+            padding:5px;
+            display:inline-block;
+            color: #fff;  
+            font-size: 0.9em;
+            border-radius: 2px;
+        }
+        .action-btn-group div:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .action-btn-group div:active{
+            opacity: 0.5;
+        }
+        .action-btn-group > .btn-update{
+            background-color: $update-color;
+            border: 1px solid $update-color;
+        }
+        .action-btn-group > .btn-add{
+            background-color: $add-color;
+            border: 1px solid $add-color;
+        }
+        .action-btn-group > .btn-delete{
+            background-color: $delete-color;
+            border: 1px solid #db2323;
+        }
+
+    }
+}
